@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Coding Challenge 6</title>
+
+    </head>
+
+    <body>
+
+        <div>
+            
+            <h3>*Question 1**:</h3> 
+            
+            <quote>Clean the room function: given an input of `[1,2,4,591,392,391,2,5,10,2,1,1,1,20,20]`, make a function that organizes these into individual array that is ordered. For example `answer(ArrayFromAbove)` should return: `[[1,1,1,1],[2,2,2], 4,5,10,[20,20], 391, 392,591]`.  <!-- Bonus: Make it so it organizes strings differently from number types. i.e. `[1, "2", "3", 2]` should return `[[1,2], ["2", "3"]]`--></quote>
+            
+            <h4> Answer: </h4>
+
+            <form>
+                
+                <label for="arrayInput1" id="arrayLabel1">[1,2,4,591,392,391,2,5,10,2,1,1,1,20,20]</label>
+                <br/>
+                <input id="arrayInput1" type="number" placeholder="Enter a number"/>
+                <input type="button" value="add number to array"onclick="add(array1,arrayInput1,arrayLabel1)">
+                <br/>
+                <input type="button" value="empty array" onclick="empty(array1,arrayLabel1)">
+                <input type="button" value="delete last number in array" onclick="pop(array1,arrayLabel1)">
+                <br/>
+                <input type="button" value="Submit" onclick="question1()">
+                <br/>
+                output:
+                <div id="answer1"></div>
+            
+            </form>
+            
+        </div> 
+
+        <div>
+           
+            <h3> **Question 2**: </h3>
+           
+            <quote>Write a javascript function that takes an array of numbers and a target number. The function should find two different numbers in the array that, when added together, give the target number. For example: `answer([1,2,3], 4)` should return `[1,3]`</quote>
+           
+            <h4> Answer: </h4>
+
+            <form>
+
+                <label for="arrayInput2" id="arrayLabel2">[1,2,3]</label>
+                <br/>
+                <input type="number" id="arrayInput2" placeholder="Enter a number"/>
+                <input type="button" value="add number to array"onclick="add(array2,arrayInput2,arrayLabel2)">
+                <br/>
+                <input type="button" value="empty array" onclick="empty(array2,arrayLabel2)">
+                <input type="button" value="delete last number in array" onclick="pop(array2,arrayLabel2)">
+                <br/>
+                <label for="numInput">Enter your target number</label>              
+                <input type="number" id="numInput" value="4"/>
+                <br/>
+                <input type="button" value="Submit" onclick="question2()">
+                <br/>                
+                output:
+                <div id="answer2"></div>
+            
+            </form>
+        
+        </div>
+
+        <div>
+            <h3>**Question 3**: </h3>
+            
+            <quote>Write a function that converts HEX to RGB. Then Make that function autodect the formats so that if you enter HEX color format it returns RGB and if you enter RGB color format it returns HEX. Bonus: Release this tool as a npm package.</quote>
+
+            <h4> Answer: </h4>
+
+            <form>
+
+                <label for="colorInput">Enter HEX or RBG color format</label>
+                
+                <input type="text" id="colorInput" size="50" value="#FF0000"/>
+                
+                <br/>
+                
+                <input type="button" value="Submit" onclick="question3()">
+                
+                <br/>
+                
+                conversion:
+                
+                <div id="answer3"></div>
+            
+            </form>
+        
+        </div>
+    
+        <script type="text/javascript" src="coding_challenge-6.js"></script>
+
+    </body>
+
+    </html>
